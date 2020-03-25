@@ -4,10 +4,6 @@
     <Slide>
     </Slide>
     <!-- layout from Slide -->
-   <!-- layout from HelloWorld2 -->
-    <HelloWorld2>
-    </HelloWorld2>
-    <!-- layout from HelloWorld2 -->
     <!-- layout from BodyLayout -->
       <BodyLayout>
      </BodyLayout>
