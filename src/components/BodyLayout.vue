@@ -5,9 +5,12 @@
     <div class="row">
       <!-- Different page layout -->
       <div class="col-sm-8" style="background:white">
-        <!-- Todo image List -->
+        <!-- Image List -->
         <Gallery></Gallery>
-        <!-- Todo image List -->
+        <!-- Image List -->
+        <!-- Todo New List -->
+        <News></News>
+        <!-- Todo New List -->
       </div>
       <!-- Different page layout-->
       <div class="col-sm-4" style="background:white; padding:0% 2%">
@@ -85,8 +88,9 @@
 
 <script>
 import Gallery from "./Gallery.vue";
+import News from "./News.vue"
 
 export default {
-  components: { Gallery }
+  components: { Gallery, News }
 };
 </script>
