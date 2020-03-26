@@ -1,52 +1,54 @@
 <template>
           <!-- slide -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              class="d-block w-100"
-              src="https://trysail.jp/s3/skiyaki/uploads/link/image/25756/%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99%E7%94%A8_Agapanthus.jpg"
-              alt="First slide"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100"
-              src="https://trysail.jp/s3/skiyaki/uploads/link/image/25209/TrySail%E3%83%90%E3%83%8A%E3%83%BC.jpg"
-              alt="Second slide"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100"
-              src="https://trysail.jp/s3/skiyaki/uploads/link/image/25756/%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99%E7%94%A8_Agapanthus.jpg"
-              alt="Third slide"
-            />
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+      <div>
+        <vueper-slides lazy lazy-load-on-drag  :slide-ratio="1 / 1.5" autoplay :slide-content-outside="contentPosition" >
+        <!--autoplay :slide-content-outside="contentPosition"-->
+        <vueper-slide 
+            v-for="(slide, i) in slides"
+            :key="i"
+            :image="slide.img"/>
+       <!-- <vueper-slide v-for="array in arrays" :key="array" :title="array.name.toString()" /> -->
+        </vueper-slides>
+
       </div>
       <!-- slide -->
 </template>
+
+
+
+<script>
+import { VueperSlides, VueperSlide } from 'vueperslides'
+import 'vueperslides/dist/vueperslides.css'
+
+export default {
+  components: { VueperSlides, VueperSlide },
+   	data(){
+		  return {
+        slides: [{
+                "no": "1",
+                "name": "TrySail",
+                "img": "https://trysail.jp/s3/skiyaki/uploads/ckeditor/pictures/258929/content_TrySail%E3%83%90%E3%83%8A%E3%83%BC.png"
+            
+            },
+              {
+                "no": "2",
+                "name": "Momo",
+                "img": "https://trysail.jp/s3/skiyaki/uploads/link/image/25756/%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99%E7%94%A8_Agapanthus.jpg"
+            
+            },
+              {
+                "no": "3",
+                "name": "Shiina",
+                "img": "https://trysail.jp/s3/skiyaki/uploads/ckeditor/pictures/265470/content_protpoint_tsujo.jpg"
+        }]
+      }
+    }
+}
+</script>
+
+<style>
+.vueperslides__bullet--active {
+color: #e6e6e6;
+
+}
+</style>
