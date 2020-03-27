@@ -6,16 +6,10 @@
     <div class="row" >
          <div class="col-xs-4 col-md-3 col-lg-2"  v-for="gallery in galleries" :key="gallery.img"  style="padding: 1%;">
             <img v-bind:src="gallery.img" width="100" height="100">
-            
          </div>
     </div>
 </div>
 </template>
-
-    <!-- footer -->
-
-<!-- footer -->
-
 <style>
 
 .bodyGridLayout {
@@ -24,7 +18,6 @@
 </style>
 
 <script>
- 
 export default{
 	data(){
 		return {
@@ -94,5 +87,4 @@ export default{
 		}
 	}
 }
-
 </script>

@@ -1,20 +1,15 @@
 <template>
-          <!-- slide -->
+    <!-- slide -->
       <div>
         <vueper-slides lazy lazy-load-on-drag  :slide-ratio="1 / 1.5" autoplay :slide-content-outside="contentPosition" >
-        <!--autoplay :slide-content-outside="contentPosition"-->
         <vueper-slide 
             v-for="(slide, i) in slides"
             :key="i"
             :image="slide.img"/>
-       <!-- <vueper-slide v-for="array in arrays" :key="array" :title="array.name.toString()" /> -->
         </vueper-slides>
-
       </div>
-      <!-- slide -->
+    <!-- slide -->
 </template>
-
-
 
 <script>
 import { VueperSlides, VueperSlide } from 'vueperslides'
