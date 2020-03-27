@@ -3,7 +3,7 @@
     <div class="topicWithLine">
          <p>What's News </p>
     </div>
-      <paginate name="paginate-log" :list="arrays" :per="5">
+      <paginate name="paginate-log" :list="arrays" :per="10">
         <p class="title" v-for="array in paginated('paginate-log')" :key="array.id">
           {{ array.title }}
         </p>
@@ -98,9 +98,7 @@ import _ from 'lodash'
   }
 </script>
 
-
 <style>
-
 ul {
   padding: 0;
 }

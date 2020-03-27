@@ -11,7 +11,6 @@
   </div>
 </template>
 
-
 <script>
   import Slide from './Slide.vue'
   import BodyLayout from './BodyLayout.vue';

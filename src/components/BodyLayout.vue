@@ -31,6 +31,7 @@
           ></iframe>
         </div>
         <!-- youtube  -->
+        <!-- blog -->
         <div class="topicWithLine">
           <p>Blog</p>
         </div>
@@ -48,6 +49,11 @@
           <a href="https://ameblo.jp/natsukawashiinablog">
             <img src="../assets/images/shiina/shiina_blog_logo.jpg" width="100%" />
           </a>
+        </div>
+        <!-- blog -->
+        <!-- link -->
+        <div class="topicWithLine">
+          <p>Link</p>
         </div>
         <div class="row" style="padding-top: 3%;">
           <a href="https://trysail.jp/contents/211898">
@@ -69,14 +75,6 @@
             <img src="../assets/images/trysail/trysail_taking_box_link.jpg"  width="100%"/>
           </a>
         </div>
-        <div class="row">2</div>
-        <div class="row">3</div>
-
-        <!-- blog -->
-
-        <!-- blog -->
-
-        <!-- link -->
         <!-- link -->
         <!-- To do youtube , blog list , list -->
       </div>
