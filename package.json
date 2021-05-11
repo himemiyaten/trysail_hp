@@ -15,7 +15,7 @@
     "bootstrap-vue": "^2.8.0",
     "jquery": "^3.4.1",
     "jw-vue-pagination": "^1.0.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "popper.js": "^1.16.1",
     "vue": "^2.6.11",
     "vue-lodash": "^2.1.2",
